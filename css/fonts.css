@@ -91,19 +91,19 @@
 }
 @font-face {
   font-family: "Cushion";
-  src: url("../fonts/Cushion/LTCushion-medium.ttf") format("truetype");
+  src: url("../fonts/Cushion/LTCushion-Medium.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 @font-face {
   font-family: "Cushion";
-  src: url("../fonts/Cushion/LTCushion-bold.ttf") format("truetype");
+  src: url("../fonts/Cushion/LTCushion-Bold.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Cushion";
-  src: url("../fonts/Cushion/LTCushion-black.ttf") format("truetype");
+  src: url("../fonts/Cushion/LTCushion-Black.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
