@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@font-face {
+  font-family: Snavirus;
+  src: url("../fonts/Snavirus.ttf")  format("truetype"), 
+}
+
+@font-face {
+  font-family: Demonstars;
+  src: url("/fonts/Demonstars.ttf")  format("truetype"), 
+}
+
+@font-face {
+  font-family: Romantic;
+  src: url("/fonts/Romantic.ttf")  format("truetype"), 
+}
+
+@font-face {
+  font-family: UrbanStarblues;
+  src: url("/fonts/UrbanStarblues.otf")  format("opentype"), 
+}
+
+@font-face {
+  font-family: Zaslia;
+  src: url("/fonts/Zaslia.otf")  format("opentype"), 
+}
+
+@font-face {
+  font-family: "IsleBody";
+  src: url("/fonts/IsleBody/IsleBodyLight.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IsleBody";
+  src: url("/fonts/IsleBody/IsleBodyMedium.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IsleBody";
+  src: url("/fonts/IsleBody/IsleBodyBold.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IsleBody";
+  src: url("/fonts/IsleBody/IsleBodyHeavy.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IsleBody";
+  src: url("/fonts/IsleBody/IsleBodyLightItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IsleBody";
+  src: url("/fonts/IsleBody/IsleBodyMediumItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IsleBody";
+  src: url("/fonts/IsleBody/IsleBodyBoldItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "IsleBody";
+  src: url("/fonts/IsleBody/IsleBodyHeavyItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bodoni";
+  src: url("/fonts/Bodoni/Bodoni.otf") format("opentype")
+  /* font-weight: 200;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: "Cushion";
+  src: url("/fonts/Cushion/LTCushion-Light.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cushion";
+  src: url("/fonts/Cushion/LTCushion-medium.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cushion";
+  src: url("/fonts/Cushion/LTCushion-bold.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cushion";
+  src: url("/fonts/Cushion/LTCushion-black.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
