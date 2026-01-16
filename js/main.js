@@ -1,4 +1,4 @@
-(async function() {
+(function() {
 
   function createElement(element) {
     return document.createElement(element)
@@ -7,15 +7,15 @@
   navLinks = [
     {
       link: '/ficdiary.html',
-      linkName: 'Fic Diary'
+      linkName: 'Fics'
     },
     {
       link: '/lupusdiary.html',
-      linkName: 'Lupus Diary'
+      linkName: 'Lupus'
     },
     {
       link: '/linkdiary.html',
-      linkName: 'Link Diary'
+      linkName: 'Links'
     },
     // {
     //   link: '#',
@@ -23,7 +23,7 @@
     // },
     {
       link: '/shrinediary.html',
-      linkName: 'Shrine Diary'
+      linkName: 'Shrines'
     },
     // {
     //   link: '#',
@@ -60,11 +60,18 @@
   header.appendChild(a)
   header.appendChild(nav)
 
-  let number = 1
-  while(true) {
-    const picture = await fetch(`/images/brunettegirl/brunette%20girl%20${number}.jpg`)
-    console.log(picture)
-    break
-  }
+  // create footer
+  let footer = document.getElementById('footer-insert')
+  let div = createElement('div')
+  div.classList.add('footer-content')
+  div.innerText = 'hellow world'
+  footer.appendChild(div)
+
+  // let number = 1
+  // while(true) {
+  //   const picture = await fetch(`/images/brunettegirl/brunette%20girl%20${number}.jpg`)
+  //   console.log(picture)
+  //   break
+  // }
 
 })();
