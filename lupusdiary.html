@@ -5,88 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jojo's Lupus Diary</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/entrytype.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/main.js" defer></script>
+    <script src="js/lupus.js" defer></script>
   </head>
   <body>
     <div class="background-opac"></div>
     <header id="header-insert"></header>
     <main>
-      <div class="post bg-black">
-        <h2>Lupie Grrl!!</h2>
-        <p>Date: 12/30/2025</p>
-        <img class="blinkie" src="https://jojoe.neocities.org/blinkies/sickashell.gif" alt="sick as hell blinkie">
-        <p>
-          I have mega lupus!! What is lupus you ask?
-            Well its a chronic disease where your immune system is so overactive that
-            it recognizes pretty much all healthy tissue in your body as a THREAT!!
-        </p>
-        <img style="float: right; width: 35%; shape-outside: polygon(100% 0, 80% 0, 77% 11%, 31% 11%, 31% 32%, 0 32%, 0 100%, 100% 100%);" src="https://jojoe.neocities.org/images/gallery.png" alt="Like a museum of lupie life">
-        <p>
-          Sounds pretty cool, huh? WELL IT'S NOT. Jk, from a scientific standpoint
-          it's like huh?? What are those t cells and b cells up to?? Haha, but from
-          a living through it standpoint it's all like "joint pain" this, and
-          "I'm always tired" that! But that's what medications are for!
-        </p>
-        <p>
-          Yes, I'm poppin hella pillies and I DO have to stick a needle in myself every week,
-            but not having that constant pain and stiffness and getting to skip sitting in a chair for an
-            hour every month with a needle in my arm for an infusion is worth it!... right?
-        </p>
-        <p class="text-dark rant">
-          You know, sometimes I feel like I've been teleported into the mind of a conspiracy theorist,
-          and I come up with all these hair brained conspiracies about how the government is supporting
-          companies that make our food, water, air quality and qualilty of life worse so that they can
-          continue funneling every penny from those lower than the one percent and lining the pockets of rich men
-          with money covered with the blood of sick people that can't afford their medical care and die quietly
-          ... But that's just a conspiracy theory... I bet it's just super normal that young women are at an all time high for being diagnosed
-          with a chronic illness that takes a year to diagnose, an arm an leg to pay for, to go to a doctor who is overwhelmed by a surplus of patients,
-          <img style="margin-right: 2em; float: left; width: 40%;shape-outside: polygon(0 7%, 100% 7%, 100% 53%, 63% 72%, 63% 96%, 0 96%);" src="https://jojoe.neocities.org/images/lupus-info.png" alt="lupus info poster">
-          whose overworked nurses get a barely livable wage to do a job harder than that of a doctor, just for your insurance to reject your pre-authorization
-          of a life-chaging/saving drug over and over until the money you spent on insurance plan for the year would have been enough to at least start the treatment
-          and then the poor get poorer and the rich get richer and when one of the richies <span class="bold">DIES</span> because of what they have
-          <span class="bold">DONE</span> it's <span class="bold">MURDER</span>, but when he is directly responsible
-          for cutting the corners that are causing normal class people to die <span class="bold">THAT'S NOT MURDER??</span>
-        </p>
-        <p>
-          Oh my! What's come over me! There I go again! Anyways, since I have no power over the invisble
-          hand, I'll tell you what I do have control over:
-        </p>
-        <ul style="position: relative;">
-          <li>What doctor I go to! My doctor is cool because she:
-            <ul>
-              <li>Is a lady</li>
-              <li>Listens when I speak</li>
-              <li>Is not a doctor, but actually an NP (little tip for my lupus girlies out there, NPs are usually better at connecting, easier to schedule with, and are JUST as qualified as a stinky doctor!!)</li>
+      <div class="home-grid">
+        <div class="round bg-black text-white" id="sidebar">
+          <h2>Entries</h2>
+        </div>
+        <div class="section bg-black text-white" id="viewer">
+          <!-- <div class="hidden" id="entry1">
+            We both laugh at our son's big balls (template)
+          </div> -->
+          <div id="welcome">
+            <img class="blinkie" src="https://jojoe.neocities.org/blinkies/sickashell.gif" alt="sick as hell blinkie">
+            <p>
+              I have mega lupus!! What is lupus you ask?
+                Well its a chronic disease where your immune system is so overactive that
+                it recognizes pretty much all healthy tissue in your body as a THREAT!!
+            </p>
+            <img style="float: right; width: 35%; shape-outside: polygon(100% 0, 80% 0, 77% 11%, 31% 11%, 31% 32%, 0 32%, 0 100%, 100% 100%);" src="https://jojoe.neocities.org/images/gallery.png" alt="Like a museum of lupie life">
+            <p>
+              Sounds pretty cool, huh? WELL IT'S NOT. Jk, from a scientific standpoint
+              it's like huh?? What are those t cells and b cells up to?? Haha, but from
+              a living through it standpoint it's all like "joint pain" this, and
+              "I'm always tired" that! But that's what medications are for!
+            </p>
+            <p>
+              Yes, I'm poppin hella pillies and I DO have to stick a needle in myself every week,
+                but not having that constant pain and stiffness and getting to skip sitting in a chair for an
+                hour every month with a needle in my arm for an infusion is worth it!... right?
+            </p>
+            <p class="text-dark rant">
+              You know, sometimes I feel like I've been teleported into the mind of a conspiracy theorist,
+              and I come up with all these hair brained conspiracies about how the government is supporting
+              companies that make our food, water, air quality and qualilty of life worse so that they can
+              continue funneling every penny from those lower than the one percent and lining the pockets of rich men
+              with money covered with the blood of sick people that can't afford their medical care and die quietly
+              ... But that's just a conspiracy theory... I bet it's just super normal that young women are at an all time high for being diagnosed
+              with a chronic illness that takes a year to diagnose, an arm an leg to pay for, to go to a doctor who is overwhelmed by a surplus of patients,
+              <img style="margin-right: 2em; float: left; width: 40%;shape-outside: polygon(0 7%, 100% 7%, 100% 53%, 63% 72%, 63% 96%, 0 96%);" src="https://jojoe.neocities.org/images/lupus-info.png" alt="lupus info poster">
+              whose overworked nurses get a barely livable wage to do a job harder than that of a doctor, just for your insurance to reject your pre-authorization
+              of a life-chaging/saving drug over and over until the money you spent on insurance plan for the year would have been enough to at least start the treatment
+              and then the poor get poorer and the rich get richer and when one of the richies <span class="bold">DIES</span> because of what they have
+              <span class="bold">DONE</span> it's <span class="bold">MURDER</span>, but when he is directly responsible
+              for cutting the corners that are causing normal class people to die <span class="bold">THAT'S NOT MURDER??</span>
+            </p>
+            <p>
+              Oh my! What's come over me! There I go again! Anyways, since I have no power over the invisble
+              hand, I'll tell you what I do have control over:
+            </p>
+            <ul style="position: relative;">
+              <li>What doctor I go to! My doctor is cool because she:
+                <ul>
+                  <li>Is a lady</li>
+                  <li>Listens when I speak</li>
+                  <li>Is not a doctor, but actually an NP (little tip for my lupus girlies out there, NPs are usually better at connecting, easier to schedule with, and are JUST as qualified as a stinky doctor!!)</li>
+                </ul>
+              </li>
+              <li>How good I am at following up on my treatment. I am lucky to be able to afford my treatment, so this is how I take advantage of it:
+                <ul>
+                  <li>Take my pills everyday!!</li>
+                  <li>Personally, I write the time I take my pills on my mirror so I can take them as close to twelve hours apart as I can</li>
+                  <li>No drinking, no drugs, no smoking, no soda, and as little candy as I can manage (though on some of my harder days I may fall victim to a little sweet treat, BUT I TRY NOT TO!!)</li>
+                  <li>Sleeping as much as I need (little naps are a must!!)</li>
+                  <li>Surrounding myself with people who understand and love me (if ur family doesn't care to understand you, get a new one!!)</li>
+                  <li>Do everything I want to do (to the extent that I can!! Being able to do a little of what you love is better than not doing it at all)</li>
+                  <li>One leg stands... literally try standing on one leg you unbalanced freak</li>
+                  <li>I hate it when people watch me do my injection, so I ask my husband to look away (he does #^_^#)</li>
+                </ul>
+              </li>
+              <li>I work out!... Except when I feel bad, then it time to rest!
+                <ul>
+                  <li>WEIGHT TRAINING!! LIFT HEAVY GOOD FOR YOUR JOINTS AND BALANCE!!</li>
+                  <li>Running is not good for your lupussy joints, and will hurt you in the long run!</li>
+                  <li>For cardio, try biking, swimming (my personal favorite!), or if your deadset on running (freak) the eliptical.</li>
+                </ul>
+              </li>
+              <li>Listening to my body!!
+                <ul>
+                  <li>I can tell the difference between "I don't want to work out" and "I can't work out" and you can too!</li>
+                  <li>The moment I feel a bad pain when doing an exercise, I stop! No need to hurt more</li>
+                  <li>If I need a nap, I need a nap!! Leave me be!!</li>
+                  <li>My medications cause me a lot of heartburn. If I know something will cause me to have it, I don't eat it! (unless it's Indian food, then it's worth it)</li>
+                </ul>
+              </li>
             </ul>
-          </li>
-          <li>How good I am at following up on my treatment. I am lucky to be able to afford my treatment, so this is how I take advantage of it:
-            <ul>
-              <li>Take my pills everyday!!</li>
-              <li>Personally, I write the time I take my pills on my mirror so I can take them as close to twelve hours apart as I can</li>
-              <li>No drinking, no drugs, no smoking, no soda, and as little candy as I can manage (though on some of my harder days I may fall victim to a little sweet treat, BUT I TRY NOT TO!!)</li>
-              <li>Sleeping as much as I need (little naps are a must!!)</li>
-              <li>Surrounding myself with people who understand and love me (if ur family doesn't care to understand you, get a new one!!)</li>
-              <li>Do everything I want to do (to the extent that I can!! Being able to do a little of what you love is better than not doing it at all)</li>
-              <li>One leg stands... literally try standing on one leg you unbalanced freak</li>
-              <li>I hate it when people watch me do my injection, so I ask my husband to look away (he does #^_^#)</li>
-            </ul>
-          </li>
-          <li>I work out!... Except when I feel bad, then it time to rest!
-            <ul>
-              <li>WEIGHT TRAINING!! LIFT HEAVY GOOD FOR YOUR JOINTS AND BALANCE!!</li>
-              <li>Running is not good for your lupussy joints, and will hurt you in the long run!</li>
-              <li>For cardio, try biking, swimming (my personal favorite!), or if your deadset on running (freak) the eliptical.</li>
-            </ul>
-          </li>
-          <li>Listening to my body!!
-            <ul>
-              <li>I can tell the difference between "I don't want to work out" and "I can't work out" and you can too!</li>
-              <li>The moment I feel a bad pain when doing an exercise, I stop! No need to hurt more</li>
-              <li>If I need a nap, I need a nap!! Leave me be!!</li>
-              <li>My medications cause me a lot of heartburn. If I know something will cause me to have it, I don't eat it! (unless it's Indian food, then it's worth it)</li>
-            </ul>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </main>
     <footer id="footer-insert"></footer>

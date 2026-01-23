@@ -1,22 +1,14 @@
-let fics = [
+let diaryEntries = [
   {
     key: "welcome",
-    title: "Welcome!",
-    shortDesc: "Explanation of what this page is",
-    rating: "?",
-    rec: "Yes!",
-    link: "#",
+    title: "Lupie Grrl!!",
     date: ["January 16, 2026", "January 17, 2026"]
   },
-  {
-    key: "entry1",
-    title: "Vibe Check",
-    shortDesc: "Frat boys fall in love?",
-    rating: 2,
-    rec: "no",
-    link: "https://archiveofourown.org/works/55801990?view_full_work=true",
-    date: ["January 16, 2025"]
-  },
+  // {
+  //   key: "entry1",
+  //   title: "Exampple title",
+  //   date: ["January 16, 2025"]
+  // },
 ]
 
 let currentEntry = "welcome"
@@ -41,24 +33,20 @@ const sidebar = document.getElementById('sidebar')
 const viewer = document.getElementById('viewer')
 
 // radio buttons + entry header
-fics.forEach(fic => {
+diaryEntries.forEach(diaryEntry => {
   // get entry
-  let entry = document.getElementById(fic.key)
+  let entry = document.getElementById(diaryEntry.key)
 
   // create buttons
   let btnTitle = createElement('span')
-  let btnDesc = createElement('span')
   let btnDate = createElement('span')
   let btn = createElement('button')
   btn.type = 'button'
-  btn.name = 'entry'
-  btn.value = fic.key
-  btnTitle.innerText = fic.title
-  btnDesc.innerText = `\n${fic.shortDesc}`
-  btnDate.innerText = `\nDate: ${fic.date[0]}`
+  btn.value = diaryEntry.key
+  btnTitle.innerText = diaryEntry.title
+  btnDate.innerText = `\nDate: ${diaryEntry.date[0]}`
   btnDate.classList.add('btn-date')
   btn.appendChild(btnTitle)
-  btn.appendChild(btnDesc)
   btn.appendChild(btnDate)
   btn.onclick = () => {toggleEntry(btn)}
 
@@ -67,33 +55,17 @@ fics.forEach(fic => {
 
   // make header pieces
   let h2 = createElement('h2')
-  let shortDesc = createElement('p')
-  let rating = createElement('p')
-  let rec = createElement('p')
-  let link = createElement('a')
   let date = createElement('p')
-  h2.innerText = fic.title
-  shortDesc.innerText = fic.shortDesc
-  date.innerText = `Date: ${fic.date[0]}`
-  rating.innerText = `Rating: ⋆ ${fic.rating}/10`
-  rec.innerText = `Reccomend? ${fic.rec}`
-  link.innerText = `Where to read: ${fic.link}`
-  link.href = fic.link
+  h2.innerText = diaryEntry.title
+  date.innerText = `Date: ${diaryEntry.date[0]}`
   
   // make entry header and review bar
   let entryHeader = createElement('div')
-  let reviewBar = createElement('div')
   entryHeader.classList.add('entry-header')
-  reviewBar.classList.add('review-bar')
 
   // add pieces to header
-  reviewBar.appendChild(date)
-  reviewBar.appendChild(rating)
-  reviewBar.appendChild(rec)
-  reviewBar.appendChild(link)
   entryHeader.appendChild(h2)
-  entryHeader.appendChild(shortDesc)
-  entryHeader.appendChild(reviewBar)
+  entryHeader.appendChild(date)
 
   // add the header to the entry
   entry.prepend(entryHeader)
@@ -103,15 +75,15 @@ fics.forEach(fic => {
   let changeLogTitle = createElement('h3')
   changeLog.classList.add('changes')
   let updates = ""
-  console.log(fic.date)
+  console.log(diaryEntry.date)
   // if there is more than one date in dates, there is an update
-  if (fic.date.length > 1) {
+  if (diaryEntry.date.length > 1) {
     // remove the first date to only display the update dates
-    fic.date.slice(1).forEach(date => {
+    diaryEntry.date.slice(1).forEach(date => {
       updates += `<p>Updated: ${date}</p>`
     })
   } else {
-    updates = "<p>This entry has no changes</p>"
+    updates = "This entry has no changes"
   }
   changeLogTitle.innerText = "Changes"
   changeLog.innerHTML = updates

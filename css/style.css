@@ -14,6 +14,10 @@
   box-sizing: border-box;
 }
 
+button, a, span, p, div {
+  font-size: 1em;
+}
+
 .hidden {
   display: none;
 }
@@ -99,28 +103,24 @@ li {
   line-height: 1.2em;
 }
 
+h1, h2,h3, h4, h5, h6 {
+  font-family: Romantic;
+  letter-spacing: 4px;
+  padding: 0;
+  margin: 0;
+}
 h1 {
-  font-family: UrbanStarblues;
   font-size: 2.6em;
   color: #ff4498;
 }
 h2, h4 {
   color: var(--accent-light);
-  font-family: Romantic;
   font-size: 1.8em;
-  padding: 0;
-  margin: 0;
-  margin-left: .1em;
   margin-top: -.2em;
-  letter-spacing: 6px;
 }
 h3 {
   color: var(--white);
-  font-family: UrbanStarblues;
   font-size: 2em;
-  padding: 0;
-  margin: 0;
-  margin-bottom: .6em;
 }
 h4 {
   font-size: 1.4em;
@@ -229,4 +229,9 @@ button {
   color: inherit;
   font-family: inherit;
   font-weight: 100;
+}
+
+.starblues {
+  font-family: UrbanStarblues;
+  /* margin-bottom: .6em; */
 }

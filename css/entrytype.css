@@ -5,7 +5,7 @@
   row-gap: .8em;
   color: white;
   height: calc(100vh - var(--header-height) - (var(--footer-height) + 1em));
-  > div.section {
+  > div {
     overflow-y: scroll;
   }
   > div:nth-child(1) {
@@ -16,8 +16,11 @@
   }
 }
 
-h2 {
-  font-size: 1.4em;
+#viewer, #sidebar {
+  padding: 1em;
+  h2 {
+    font-size: 2em;
+  }
 }
 
 #sidebar {
@@ -25,21 +28,19 @@ h2 {
   padding: 1em;
   button {
     width: 100%;
-    font-size: .7em;
+    /* make the font size within the button slightly smaller */
+    font-size: .8em;
     font-weight: 100;
     text-align: left;
     padding: .6em 0;
     display: block;
     border-radius: 0;
     border-bottom: 1px solid #4a4a4a;
-    span {
-      font-size: 1em;
-    }
     :nth-child(1) {
       font-size: 1.2em;
       font-weight: 300;
     }
-    :nth-child(3) {
+    .btn-date {
       display: block;
       margin-top: -.4em;
       text-transform: uppercase;
@@ -48,17 +49,8 @@ h2 {
   }
 }
 
-#viewer {
-  p {
-    font-size: .8em;
-  }
-}
 .entry-header {
-  h2 {
-    font-size: 1.8em;
-  }
   p {
-    font-size: 1em !important;
     margin-top: -.2em;
     margin-bottom: .6em;
   }
@@ -86,7 +78,6 @@ h2 {
 .changes {
   width: fit-content;
   padding: 1em;
-  font-size: .8em;
   color: var(--black);
   background-color: var(--white);
   border-radius: 10px;
@@ -95,6 +86,7 @@ h2 {
     font-size: 1.4em;
   }
   p {
+    font-size: .6em;
     margin-bottom: .4em;
   }
   p:last-child {

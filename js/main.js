@@ -42,6 +42,7 @@
   let h1 = createElement('h1')
   a.href = '/'
   h1.innerText = 'Jojo Website'
+  h1.classList.add('starblues')
   a.appendChild(h1)
 
   let nav = createElement('nav')
