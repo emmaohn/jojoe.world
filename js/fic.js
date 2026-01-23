@@ -6,16 +6,16 @@ let fics = [
     rating: "?",
     rec: "Yes!",
     link: "#",
-    date: ["January 16, 2026"]
+    date: ["January 16, 2026", "January 17, 2026"]
   },
   {
     key: "entry1",
-    title: "Example Title",
-    shortDesc: "It was ok",
-    rating: 5,
-    rec: "yes",
-    link: "#",
-    date: ["october 10, 2025"]
+    title: "Vibe Check",
+    shortDesc: "Frat boys fall in love?",
+    rating: 2,
+    rec: "no",
+    link: "https://archiveofourown.org/works/55801990?view_full_work=true",
+    date: ["January 16, 2025"]
   },
 ]
 
@@ -96,4 +96,26 @@ fics.forEach(fic => {
 
   // add the header to the entry
   entry.prepend(entryHeader)
+
+  // create entry change log
+  let changeLog = createElement('div')
+  let changeLogTitle = createElement('h3')
+  changeLog.classList.add('changes')
+  let updates = ""
+  console.log(fic.date)
+  // if there is more than one date in dates, there is an update
+  if (fic.date.length > 1) {
+    // remove the first date to only display the update dates
+    fic.date.slice(1).forEach(date => {
+      updates += `<p>Updated: ${date}</p>`
+    })
+  } else {
+    updates = "This entry has no changes"
+  }
+  changeLogTitle.innerText = "Changes"
+  changeLog.innerHTML = updates
+  changeLog.prepend(changeLogTitle)
+
+  // add changelog to entry
+  entry.appendChild(changeLog)
 })

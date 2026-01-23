@@ -83,3 +83,21 @@ h2 {
     color: var(--black);
   }
 }
+.changes {
+  width: fit-content;
+  padding: 1em;
+  font-size: .8em;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: 10px;
+  h3 {
+    color: var(--black);
+    font-size: 1.4em;
+  }
+  p {
+    margin-bottom: .4em;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -104,10 +104,10 @@ h1 {
   font-size: 2.6em;
   color: #ff4498;
 }
-h2 {
+h2, h4 {
   color: var(--accent-light);
   font-family: Romantic;
-  font-size: 2.4em;
+  font-size: 1.8em;
   padding: 0;
   margin: 0;
   margin-left: .1em;
@@ -121,6 +121,9 @@ h3 {
   padding: 0;
   margin: 0;
   margin-bottom: .6em;
+}
+h4 {
+  font-size: 1.4em;
 }
 
 .background-opac {
@@ -136,7 +139,6 @@ body {
   position: relative;
   font-family: Cushion, 'Times New Roman', Times, serif;
   font-weight: 100;
-  font-size: large;
   height: 100vh;
   background: repeat url("https://jojoe.neocities.org/gingham.png");
   background-position: top left;
