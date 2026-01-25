@@ -1,0 +1,32 @@
+:root {
+  --tab-section-height: 2em;
+}
+
+#tabs {
+  margin-left: 1.4em;
+  display: flex;
+  gap: 4px;
+  height: var(--tab-section-height);
+  button {
+    background-color: var(--accent-medium);
+    border-radius: 10px 10px 0 0;
+    border: 3px solid var(--white);
+    border-bottom: none;
+    font-weight: 200;
+  }
+  button:nth-child(even) {
+    background-color: var(--accent-dark);
+  }
+  button.activeTab {
+    color: var(--white);
+    background-color: var(--black);
+    border-color: var(--black);
+  }
+}
+
+#content-window {
+  height: calc(100vh - var(--header-height) - (var(--footer-height) + var(--tab-section-height) + 1em));
+  padding: 1em;
+  overflow-y: scroll;
+  /* border: 3px solid var(--white); */
+}

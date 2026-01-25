@@ -5,51 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The web site of jojoe</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/tabtype.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/scrapbook.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/main.js" defer></script>
+    <script src="js/scrapbook.js" defer></script>
   </head>
   <body>
     <div class="background-opac"></div>
     <header id="header-insert"></header>
     <main>
-      <div class="post">
-        <h2>scrap book</h2>
-        https://www.nerdtests.com
-        https://emojidb.org/
-        ascii characters
-        𓆝 𓆟 𓆞 𓆝 𓆟
-        ⋆⭒˚.⋆
-        ⋆ ˚｡⋆୨୧˚
-        .𖥔 ݁ ˖
-        ｡𖦹°‧ ݁ ˖
-        ⋆˚✿˖°
-        ₊˚⊹ ♡
-      </div>
-      <div class="mango" style="justify-content: center;align-content: center;display: grid; grid-template-columns: 1fr; grid-template-rows: 1fr;">
-        mango
-        <div style="grid-column: 1/1; grid-row: 1/1; width: 240px; height: 320px; background-color: white; clip-path: polygon(17% 51%, 0 44%, 0 34%, 21% 38%, 39% 25%, 42% 12%, 47% 13%, 49% 20%, 59% 15%, 79% 23%, 73% 64%, 56% 70%, 27% 63%);"></div>
-        <img style="width: 220px; height: 300px;grid-column: 1/1; grid-row: 1/1; clip-path: polygon(17% 51%, 0 44%, 0 34%, 21% 38%, 39% 25%, 42% 12%, 47% 13%, 49% 20%, 59% 15%, 79% 23%, 73% 64%, 56% 70%, 27% 63%);" src="https://jojoe.neocities.org/images/mango.jpeg" alt="">
-      </div>
-      <div>
-        <img style="shape-outside: polygon(0 5%, 100% 5%, 100% 44%, 79% 86%, 62% 96%, 0 96%);" src="https://jojoe.neocities.org/images/todo.png" alt="Cunty to do list">
-      </div>
-      <div class="post">
-        <h2>Emmett's Corner</h2>
-        <img class="blinkie" src="https://jojoe.neocities.org/blinkies/coolasice-blinkie.gif" alt="Cool as Ice blinkie">
-        <p>Emmett is my husband's littlest brother, and he asked me to make this silly little blinkie after I showed him my cool as hell blinkie. THIS ONE'S FOR YOU EMMETT</p>
-      </div>
-      <div>
-        cool css snippets
+      <div id="tabs"></div>
+      <div class="round bg-black" id="content-window">
+        <div data-title="welcome">
+          <h2>scrap book</h2>
+          This page is page for me to collect and coagulate little bits that I find around the internet,
+          pinterest, etc. that I want to save for possible use later on my website! Help your self to
+          anything in this scrapbook!
+        </div>
+        <div data-title="ascii">
+          <h2>Ascii Characters</h2>
+          https://emojidb.org/
+          ascii characters
+          𓆝 𓆟 𓆞 𓆝 𓆟
+          ⋆⭒˚.⋆
+          ⋆ ˚｡⋆୨୧˚
+          .𖥔 ݁ ˖
+          ｡𖦹°‧ ݁ ˖
+          ⋆˚✿˖°
+          ₊˚⊹ ♡
+        </div>
+        <div data-title="images">
+          <h2>Images</h2>
+          <div class="mango">
+            mango
+            <div></div>
+            <img src="https://jojoe.neocities.org/images/mango.jpeg" alt="My cat Mango">
+          </div>
+          <img style="shape-outside: polygon(0 5%, 100% 5%, 100% 44%, 79% 86%, 62% 96%, 0 96%);" src="https://jojoe.neocities.org/images/todo.png" alt="Cunty to do list">
+        </div>
+        <div data-title="blinkies">
+          <h2>Blinkies</h2>
+          <img class="blinkie" src="https://jojoe.neocities.org/blinkies/coolasice-blinkie.gif" alt="Cool as Ice blinkie">
 
-        glass morphism
-        selector {
-          backdrop-filter: blur(10px);
-          box-shadow: 0 0 10px #d3d3d3;
-          border-radius: 32px;
-          text-align: center;
-        }
-        selector:hover {
-          opacity: 1;
-        }
+        </div>
+        <div data-title="badges">
+          <h2>Badges</h2>
+        </div>
+        <div data-title="stamps">
+          <h2>Stamps</h2>
+        </div>
+        <div data-title="css snippets">
+          <h2>Cool css snippets!!</h2>
+          <div>
+            glass morphism
+            selector {
+              backdrop-filter: blur(10px);
+              box-shadow: 0 0 10px #d3d3d3;
+              border-radius: 32px;
+              text-align: center;
+            }
+            selector:hover {
+              opacity: 1;
+            }
+          </div>
+        </div>
       </div>
     </main>
     <footer id="footer-insert"></footer>

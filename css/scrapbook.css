@@ -1,0 +1,14 @@
+.mango {
+  justify-content: center;
+  align-content: center;
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr;
+  div {
+    grid-column: 1/1; 
+    grid-row: 1/1; width: 240px; height: 320px; background-color: white; clip-path: polygon(17% 51%, 0 44%, 0 34%, 21% 38%, 39% 25%, 42% 12%, 47% 13%, 49% 20%, 59% 15%, 79% 23%, 73% 64%, 56% 70%, 27% 63%);
+  }
+  img {
+    width: 220px; height: 300px;grid-column: 1/1; grid-row: 1/1; clip-path: polygon(17% 51%, 0 44%, 0 34%, 21% 38%, 39% 25%, 42% 12%, 47% 13%, 49% 20%, 59% 15%, 79% 23%, 73% 64%, 56% 70%, 27% 63%);
+  }
+}

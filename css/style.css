@@ -1,11 +1,11 @@
 @import url('./fonts.css');
 
 :root {
-  --white: white;
+  --white: #fff7fa;
   --black: #3d3d3d;
-  --accent-light: #ffdeed;
-  --accent-medium: #ffa1cb;
-  --accent-dark: #ff4f9e;
+  --accent-light: #ffe3f0;
+  --accent-medium: #ffbfdc;
+  --accent-dark: #ff83bb;
 
   --header-height: 120px;
   --footer-height: 60px;
@@ -111,7 +111,7 @@ h1, h2,h3, h4, h5, h6 {
 }
 h1 {
   font-size: 2.6em;
-  color: #ff4498;
+  color: var(--accent-dark);
 }
 h2, h4 {
   color: var(--accent-light);
@@ -163,7 +163,8 @@ header {
       justify-content: end;
       flex-wrap: wrap;
       list-style: none;
-      row-gap: 1em;
+      row-gap: 15px;
+      column-gap: 10px;
       padding: 0;
       margin: 0;
       li {
@@ -172,14 +173,12 @@ header {
           color: var(--white);
           background-color: var(--black);
           padding: .6em .8em .4em .8em;
-          margin: 0 .6em;
-          border-radius: 12px;
+          border-radius: 10px;
           transition: all .3s;
         }
         a:hover {
           color: var(--black);
           background-color: var(--accent-light);
-          border-radius: 7px;
         }
       }
     }
