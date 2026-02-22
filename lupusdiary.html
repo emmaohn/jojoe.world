@@ -7,7 +7,11 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/entrytype.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/main.js" defer></script>
-    <script src="js/lupus.js" defer></script>
+    <script type="module">
+      import { makeEntries } from './js/entry.js'
+      import { entries } from './json/lupusJSON.js'
+      makeEntries(entries, entries[0["key"]])
+    </script>
   </head>
   <body>
     <div class="background-opac"></div>

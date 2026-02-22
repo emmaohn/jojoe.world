@@ -8,7 +8,11 @@
     <link href="css/tabtype.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/scrapbook.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/main.js" defer></script>
-    <script src="js/scrapbook.js" defer></script>
+    <script type="module">
+      import { makeTabs } from './js/tabs.js'
+      const tabTitles = ["welcome", "ascii", "images", "blinkies", "badges", "stamps", "css snippets"]
+      makeTabs(tabTitles, tabTitles[0])
+    </script>
   </head>
   <body>
     <div class="background-opac"></div>

@@ -13,18 +13,9 @@
     <!-- entry type script -->
     <script type="module">
       import { makeEntries } from './js/entry.js'
-      import { entries } from './json/lupusJSON.js'
-      // to make a review page, add a third argument of "true" to this fucntion!
-      makeEntries(entries, entries[0["key"]])
-    </script>
-
-    <!-- tab type styles -->
-    <link href="css/tabtype.css" rel="stylesheet" type="text/css" media="all">
-    <!-- tab type script -->
-    <script type="module">
-      import { makeTabs } from './js/tabs.js'
-      const tabTitles = ["site buttons", "other cool sites"]
-      makeTabs(tabTitles, tabTitles[0])
+      import { entries } from './json/booksJSON.js'
+      // to make a review page, add a third argument of "true" to this fucntion! (psst, you also need to make a new json file for the entries too!)
+      makeEntries(entries, entries[0["key"]], true)
     </script>
 
     <!-- change the color theme of just this page!! -->
@@ -42,8 +33,6 @@
     <div class="background-opac"></div>
     <header id="header-insert"></header>
     <main>
-
-      <!-- entry type content -->
       <div class="home-grid">
         <div class="round bg-black text-white" id="sidebar">
           <h2>Entries</h2>
@@ -52,16 +41,12 @@
           <!-- <div class="hidden" id="entry2">
             We both laugh at our son's big balls (template)
           </div> -->
-        <div id="welcome">first entry here</div>
+        <div id="welcome">
+          <p>this page is about books, blah blah blah, on to the reviews</p>
+        </div>
+        <div class="hidden" id="entry1">first entry here</div>
         </div>
       </div>
-
-      <!-- tab type content -->
-      <div id="tabs"></div>
-      <div class="round bg-black" id="content-window">
-        <div data-title="site buttons">stuff goes in here!!</div>
-      </div>
-
     </main>
     <footer id="footer-insert"></footer>
   </body>

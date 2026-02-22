@@ -6,6 +6,10 @@
 
   navLinks = [
     {
+      link: '/bookdiary.html',
+      linkName: 'Books'
+    },
+    {
       link: '/ficdiary.html',
       linkName: 'Fics'
     },
@@ -17,10 +21,10 @@
       link: '/linkdiary.html',
       linkName: 'Links'
     },
-    // {
-    //   link: '#',
-    //   linkName: 'Movie and TV Diary'
-    // },
+    {
+      link: 'tvdiary.html',
+      linkName: 'TV'
+    },
     {
       link: '/shrinediary.html',
       linkName: 'Shrines'
