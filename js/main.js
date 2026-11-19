@@ -6,19 +6,19 @@
 
   navLinks = [
     {
-      link: '/bookdiary.html',
+      link: 'bookdiary.html',
       linkName: 'Books'
     },
     {
-      link: '/ficdiary.html',
+      link: 'ficdiary.html',
       linkName: 'Fics'
     },
     {
-      link: '/lupusdiary.html',
+      link: 'lupusdiary.html',
       linkName: 'Lupus'
     },
     {
-      link: '/linkdiary.html',
+      link: 'linkdiary.html',
       linkName: 'Links'
     },
     {
@@ -26,7 +26,7 @@
       linkName: 'TV'
     },
     {
-      link: '/shrinediary.html',
+      link: 'shrinediary.html',
       linkName: 'Shrines'
     },
     // {
@@ -34,7 +34,7 @@
     //   linkName: 'Fashion Diary'
     // },
     {
-      link: '/scrapbook.html',
+      link: 'scrapbook.html',
       linkName: 'Scrapbook'
     },
   ]
