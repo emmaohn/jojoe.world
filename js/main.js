@@ -54,7 +54,7 @@
   navLinks.forEach(link => {
     let li = createElement('li')
     let a = createElement('a')
-    a.href = `./${link.link}`
+    a.href = `.${link.link}`
     a.innerText = link.linkName
 
     li.appendChild(a)
